@@ -21,7 +21,7 @@ def Mode(hist):
 
     returns: value from Hist
     """
-    return 0
+    return hist.Largest()[0][0]
 
 
 def AllModes(hist):
@@ -31,8 +31,7 @@ def AllModes(hist):
 
     returns: iterator of value-freq pairs
     """
-    return []
-
+    return hist.SortedItems()
 
 def main(script):
     """Tests the functions in this module.
